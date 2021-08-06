@@ -1,7 +1,7 @@
 #!/bin/python3
 class game:
     def __init__(self):
-        self.board_game = [['A', 'B', 'C', 'D'], ['E' ,'F', 'G', 'H'], ['I', 'G', 'K', ' ']]
+        self.board_game = [['A', 'B', 'C', 'D'], ['E' ,'F', 'G', 'H'], ['I', 'K', 'G', ' ']]
         self.blank = [2,3]
         self.play_game()
 
