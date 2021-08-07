@@ -56,6 +56,8 @@ class game:
             position = self.find_char(char)
             if self.check_swap(position):
                 self.swap_char(position)
+            else:
+                print("\nCan't swap")
 
             if self.check_win():
                 print('\n')
@@ -72,7 +74,7 @@ class input_processer:
 
     def input_checker(self):
         while True:
-            self.char = input("Enter charactor : ")
+            self.char = input("Enter charactor here: ")
             if self.char in "ABCDEFGHIJK":
                 break
             else:
