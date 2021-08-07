@@ -1,8 +1,8 @@
 #!/bin/python3
 class game:
     def __init__(self):
-        self.board_game = [['A', 'B', 'C', 'D'], ['E' ,'F', 'G', 'H'], ['I', 'G', 'K', ' ']]
-        self.blank = [2,3]
+        self.board_game = [['A', 'B', 'C', 'D'], ['E' ,'F', 'G', 'H'], ['I', 'J', ' ', 'K']]
+        self.blank = [2,2]
         self.play_game()
 
     def show_board(self):
@@ -50,6 +50,8 @@ class game:
                 self.swap_char(position)
 
             if self.check_win():
+                print('\n')
+                self.show_board();
                 print('Your win')
                 break
 
@@ -63,7 +65,7 @@ class input_processer:
     def input_checker(self):
         while True:
             self.char = input("Enter charactor : ")
-            if self.char in "ABCDEFGHIGK":
+            if self.char in "ABCDEFGHIJK":
                 break
             else:
                 print('\n')
