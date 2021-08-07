@@ -40,6 +40,14 @@ class game:
 
     def play_game(self):
         input_class = input_processer()
+        s='''
+         ___          _   _              ___                _ _ 
+        / __| ___ _ _| |_(_)_ _  __ _   / __|__ _ _ __  ___| | |
+        \__ \/ _ \ '_|  _| | ' \/ _` | | (_ / _` | '  \/ -_)_|_|
+        |___/\___/_|  \__|_|_||_\__, |  \___\__,_|_|_|_\___(_|_)
+                                |___/                           
+        '''
+        print(s)
         while True:
             print('\n')
             self.show_board();
