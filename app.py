@@ -75,6 +75,7 @@ class input_processer:
     def input_checker(self):
         while True:
             self.char = input("Enter charactor here: ")
+            self.char = self.char.upper()
             if self.char in "ABCDEFGHIJK":
                 break
             else:
@@ -89,4 +90,4 @@ class input_processer:
 
 
 if __name__ == '__main__':
-    game() 
+    game()
